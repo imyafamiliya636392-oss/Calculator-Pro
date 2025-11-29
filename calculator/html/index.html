@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Professional Calculator</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="shortcut icon" href="https://i.pinimg.com/736x/52/3d/7c/523d7c6bb3d8ac0fc761aaf54ba461f3.jpg" type="image/x-icon">
+</head>
+<body>
+  <main class="app">
+    <div class="calculator" role="application" aria-label="Kalkulyator">
+      <div class="brand">
+        <div class="logo">calc<span>Pro</span></div>
+      </div>
+
+      <div class="screen" id="screen" aria-live="polite">
+        <div class="expr" id="expression">0</div>
+        <div class="result" id="result"></div>
+      </div>
+
+      <div class="keys" role="group" aria-label="Calculator buttons">
+        <!-- Row 1 -->
+        <button class="btn btn-ac" data-action="clear">AC</button>
+        <button class="btn btn-neg" data-action="neg">±</button>
+        <button class="btn btn-percent" data-action="percent">%</button>
+        <button class="btn btn-op" data-value="/" aria-label="divide">÷</button>
+
+        <!-- Row 2 -->
+        <button class="btn" data-value="7">7</button>
+        <button class="btn" data-value="8">8</button>
+        <button class="btn" data-value="9">9</button>
+        <button class="btn btn-op" data-value="*" aria-label="multiply">×</button>
+
+        <!-- Row 3 -->
+        <button class="btn" data-value="4">4</button>
+        <button class="btn" data-value="5">5</button>
+        <button class="btn" data-value="6">6</button>
+        <button class="btn btn-op" data-value="-" aria-label="minus">−</button>
+
+        <!-- Row 4 -->
+        <button class="btn" data-value="1">1</button>
+        <button class="btn" data-value="2">2</button>
+        <button class="btn" data-value="3">3</button>
+        <button class="btn btn-op" data-value="+" aria-label="plus">+</button>
+
+        <!-- Row 5 -->
+        <button class="btn btn-zero" data-value="0">0</button>
+        <button class="btn" data-value=".">.</button>
+        <button class="btn btn-eq" data-action="equals">=</button>  
+      </div>
+
+      <div class="footer">
+        <small>Designed by Shaxzod with — Responsive, accessible & lightweight</small>
+      </div>
+    </div>
+  </main>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
